@@ -180,9 +180,9 @@ class Instructor extends Lambdasian{
         + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
 */
 class Student extends Lambdasian{
-  constructor(previousBackground,attributes){
+  constructor(attributes){
     super(attributes);
-    this.previousBackground = previousBackground;
+    this.previousBackground = attributes.previousBackground;
     this.className = attributes.className;
     this.favSubjects = attributes.favSubjects;
     this.grade = attributes.grade;
